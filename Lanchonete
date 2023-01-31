@@ -1,0 +1,33 @@
+int cod, qtde;
+            double prc = 0;
+
+            Console.WriteLine("Por favor, insira o código do lanche");
+            cod = int.Parse(Console.ReadLine());
+            Console.WriteLine("Quantos você vai querer?");
+            qtde= int.Parse(Console.ReadLine());
+
+            if (cod == 1)
+            {
+                prc = 4.00 * qtde;
+                Console.WriteLine("Seu pedido é de um Cachorro Quente e o total é de: " + (prc.ToString("F2", CultureInfo.InvariantCulture)));
+            }
+            else if (cod == 2)
+            {
+                prc = 4.50 * qtde;
+                Console.WriteLine("Seu pedido é de um X-salada e o total é de: " + (prc.ToString("F2",CultureInfo.InvariantCulture)));
+            }
+            else if (cod == 3)
+            {
+                prc = 5.00 * qtde;
+                Console.WriteLine("Seu pedido é de um X-Bacon e o total é de: " + (prc.ToString("F2", CultureInfo.InvariantCulture)));
+            }
+            else if (cod == 4)
+            {
+                prc = 2.00 * qtde;
+                Console.WriteLine("Seu pedido é de uma torrada simples e o total é de: " + (prc.ToString("F2", CultureInfo.InvariantCulture)));
+            }
+            else if (cod == 5)
+            {
+                prc = 1.50 * qtde;
+                Console.WriteLine("Seu pedido é de um refrigerante e o total é de: " + (prc.ToString("F2", CultureInfo.InvariantCulture)));
+            }
